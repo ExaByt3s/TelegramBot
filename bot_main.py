@@ -4,7 +4,7 @@ from forex_python.converter import CurrencyRates
 c = CurrencyRates()
 
 # Qua impostare il token dato da botfather
-TOKEN = "5243914320:AAHSxGWDQQEASZkIwAuyS2HHdIJq18cJ-2M"
+TOKEN = "ABCDEFGH12345678"
 
 
 def extract_number(text):
