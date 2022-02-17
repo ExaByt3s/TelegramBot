@@ -7,7 +7,7 @@ TOKEN="ABCDEFGH12345678" #Qua impostare il token dato da botfather
 
 
 def extract_number(text):
-     return text.split()[1].strip()
+    return text.split()[1].strip()
 
 #USD
 def from_usd_to_eur(currency_1):
@@ -25,10 +25,10 @@ def from_eur_to_rub(currency_1):
 
 #USD
 def convert_usd(update, context):
-     usd=float(extract_number(update.message.text))
-     eur=from_usd_to_eur(usd)
-     print(f'Eseguita conversione da {usd} USD a {eur} EUR')
-     update.message.reply_text(f'{eur} EUR')
+    usd=float(extract_number(update.message.text))
+    eur=from_usd_to_eur(usd)
+    print(f'Eseguita conversione da {usd} USD a {eur} EUR')
+    update.message.reply_text(f'{eur} EUR')
 
 #RUB
 def converter_rub(update, context):
@@ -39,10 +39,10 @@ def converter_rub(update, context):
 
 #EUR
 def convert_eur_to_usd(update, context):
-     eur=float(extract_number(update.message.text))
-     usd=from_eur_to_usd(eur)
-     print(f'Eseguita conversione da {eur} EUR a {usd} USD')
-     update.message.reply_text(f'{usd} USD')
+    eur=float(extract_number(update.message.text))
+    usd=from_eur_to_usd(eur)
+    print(f'Eseguita conversione da {eur} EUR a {usd} USD')
+    update.message.reply_text(f'{usd} USD')
 
 def converter_eur_to_rub(update, context):
     eur=float(extract_number(update.message.text))
