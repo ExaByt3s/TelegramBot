@@ -1,2 +1,2 @@
 # TelegramBot
-Telegram Bot wirte in python
+Telegram Bot in python
